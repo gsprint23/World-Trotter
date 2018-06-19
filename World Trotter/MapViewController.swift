@@ -24,8 +24,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         // https://swiftludus.org/how-to-access-the-users-location-in-ios-apps/
 //        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
 //        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        //locationManager.startUpdatingLocation()
+//        locationManager.requestWhenInUseAuthorization()
+//        locationManager.startUpdatingLocation()
+        
+//        let currentLocale = Locale.current
+//        print("Metric system:", currentLocale.usesMetricSystem)
+//        print("Currency symbol:", currentLocale.currencySymbol)
+//        print("Language code:", currentLocale.languageCode)
+        
     }
     
     override func loadView() {
@@ -35,7 +41,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         // set it as the view of this view controller
         view = mapView
         
-        let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
+        let standardString = NSLocalizedString("Standard", comment: "Standard map view")
+        let satelliteString = NSLocalizedString("Satellite", comment: "Satellite map view")
+        let hybridString = NSLocalizedString("Hybrid", comment: "Hybrid map view")
+        
+        let segmentedControl = UISegmentedControl(items: [standardString, satelliteString, hybridString])
         segmentedControl.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         segmentedControl.selectedSegmentIndex = 0
         

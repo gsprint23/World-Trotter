@@ -76,8 +76,8 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField) {
-        if let text = textField.text, let value = Double(text) {
-            fahrenheitValue = Measurement(value: value, unit: .fahrenheit)
+        if let text = textField.text, let number = numberFormatter.number(from: text) {
+            fahrenheitValue = Measurement(value: number.doubleValue, unit: .fahrenheit)
             // via a property observer on fahrenheitValue, updateCelsiusLable() will be called
         }
         else {
@@ -93,15 +93,19 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         // this method is called becaues the text field needs input (e.g. and answer to a q)
         // should the replacement string be accepted or rejected?
-        print("Current text: \(textField.text)")
-        print("Replacement text: \(string)")
+//        print("Current text: \(textField.text)")
+//        print("Replacement text: \(string)")
+        let currentLocale = Locale.current
+        let decimalSeparator = currentLocale.decimalSeparator ?? "."
+        
+        
         
         let characterSet = NSCharacterSet.letters
         let replacementTextHasLetters = string.rangeOfCharacter(from: characterSet)
-        print(replacementTextHasLetters)
+        //print(replacementTextHasLetters)
         
-        let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
-        let replacementTextHasDecimalSeparator = string.range(of: ".")
+        let existingTextHasDecimalSeparator = textField.text?.range(of: decimalSeparator)
+        let replacementTextHasDecimalSeparator = string.range(of: decimalSeparator)
         
         if existingTextHasDecimalSeparator != nil, replacementTextHasDecimalSeparator != nil {
             // already typed a . and is trying to type another .

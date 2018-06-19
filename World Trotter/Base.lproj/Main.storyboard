@@ -31,26 +31,26 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="lI0-gE-eAV"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1k-e4-5sJ">
-                                <rect key="frame" x="39.5" y="120" width="296" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1k-e4-5sJ">
+                                <rect key="frame" x="40" y="120" width="295.5" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oT-NF-GuD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oT-NF-GuD">
                                 <rect key="frame" x="130.5" y="171" width="114" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXM-9u-7w0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXM-9u-7w0">
                                 <rect key="frame" x="129.5" y="222" width="116.5" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90S-zQ-J7Y">
-                                <rect key="frame" x="64.5" y="314" width="246" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90S-zQ-J7Y">
+                                <rect key="frame" x="64.5" y="314" width="245.5" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -61,16 +61,24 @@
                         <constraints>
                             <constraint firstItem="A1k-e4-5sJ" firstAttribute="top" secondItem="jli-H9-4U2" secondAttribute="bottom" constant="8" id="2fL-MM-DYv"/>
                             <constraint firstItem="jli-H9-4U2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="3gH-DF-Skx"/>
+                            <constraint firstItem="HXM-9u-7w0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5eM-9T-5yh"/>
                             <constraint firstItem="HXM-9u-7w0" firstAttribute="top" secondItem="7oT-NF-GuD" secondAttribute="bottom" constant="8" id="8Jz-iW-otR"/>
                             <constraint firstItem="jli-H9-4U2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BAZ-sI-9l9"/>
+                            <constraint firstItem="A1k-e4-5sJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LCx-cc-VmS"/>
+                            <constraint firstItem="7oT-NF-GuD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NSj-t1-pcW"/>
+                            <constraint firstItem="90S-zQ-J7Y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O3U-Tg-pug"/>
                             <constraint firstItem="jli-H9-4U2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Pt9-kk-KFC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HXM-9u-7w0" secondAttribute="trailing" id="Qkw-6C-D64"/>
                             <constraint firstItem="A1k-e4-5sJ" firstAttribute="top" secondItem="jli-H9-4U2" secondAttribute="bottom" constant="8" id="TaB-yH-7OG"/>
                             <constraint firstItem="A1k-e4-5sJ" firstAttribute="centerX" secondItem="jli-H9-4U2" secondAttribute="centerX" id="Xiv-vY-TVp"/>
                             <constraint firstItem="7oT-NF-GuD" firstAttribute="centerX" secondItem="jli-H9-4U2" secondAttribute="centerX" id="ZfN-c0-Rva"/>
                             <constraint firstItem="90S-zQ-J7Y" firstAttribute="top" secondItem="HXM-9u-7w0" secondAttribute="bottom" constant="8" id="c9i-ae-wji"/>
                             <constraint firstItem="90S-zQ-J7Y" firstAttribute="centerX" secondItem="jli-H9-4U2" secondAttribute="centerX" id="cYQ-Qe-hgY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="90S-zQ-J7Y" secondAttribute="trailing" id="dri-zf-QUG"/>
                             <constraint firstItem="7oT-NF-GuD" firstAttribute="top" secondItem="A1k-e4-5sJ" secondAttribute="bottom" constant="8" id="ekK-Ns-Zi1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7oT-NF-GuD" secondAttribute="trailing" id="kjq-hn-V0K"/>
                             <constraint firstItem="HXM-9u-7w0" firstAttribute="centerX" secondItem="jli-H9-4U2" secondAttribute="centerX" id="qWw-aU-MLq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A1k-e4-5sJ" secondAttribute="trailing" id="z0Z-vt-c0e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
